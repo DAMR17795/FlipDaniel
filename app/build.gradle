@@ -5,7 +5,11 @@ plugins {
 
 android {
     namespace 'www.iesmurgi.flipdaniel'
-    compileSdk 32
+    compileSdk 33
+
+    viewBinding {
+        enabled=true
+    }
 
     defaultConfig {
         applicationId "www.iesmurgi.flipdaniel"

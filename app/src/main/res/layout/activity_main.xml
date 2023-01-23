@@ -8,6 +8,32 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvTramas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/tvEjeY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,16 +44,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintTop_toBottomOf="@+id/sbEjeY"
         app:layout_constraintVertical_bias="0.033" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/sbEjeY"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="325dp"
         android:layout_height="22dp"
-        android:max="3"
-        android:progress="0"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:max="6"
+        android:min="3"
+        android:progress="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,12 +62,13 @@
         app:layout_constraintVertical_bias="0.026" />
 
     <SeekBar
-        android:id="@+id/seekBar3"
+        android:id="@+id/sbTrama"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="325dp"
         android:layout_height="22dp"
-        android:max="3"
-        android:progress="0"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:max="6"
+        android:min="2"
+        android:progress="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,21 +86,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/sbEjeX"
         app:layout_constraintVertical_bias="0.03" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/sbEjeX"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="325dp"
         android:layout_height="22dp"
+        android:max="6"
+        android:min="3"
+        android:progress="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.027"
-        android:max="3"
-        android:progress="0"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"/>
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
         android:id="@+id/textView"
@@ -101,14 +130,14 @@
         app:layout_constraintVertical_bias="0.033">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbColores"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Colores" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/rbNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -116,7 +145,7 @@
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chSonido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sonido"
@@ -128,14 +157,14 @@
         app:layout_constraintVertical_bias="0.069" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chVibra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vibración"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/chSonido"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.072" />
 
@@ -150,7 +179,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar3"
+        app:layout_constraintTop_toBottomOf="@+id/sbTrama"
         app:layout_constraintVertical_bias="0.043" />
 
     <TextView
@@ -190,5 +219,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.151"
         app:srcCompat="@drawable/ejey" />
+
+
+    <TextView
+        android:id="@+id/tvEjeX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="157dp"
+        android:layout_height="205dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@drawable/play" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
