@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/Op"
+        android:icon="@drawable/playericon"
+        app:showAsAction="ifRoom"
+        android:title="Opción Android">
+    </item>
+    <item android:id="@+id/Op1"
+        android:icon="@drawable/ajustesicon"
+        app:showAsAction="ifRoom"
+        android:title="Opción Android">
+    </item>
+    <item android:id="@+id/Op2"
+        android:icon="@drawable/acercadeicon"
+        app:showAsAction="ifRoom"
+        android:title="Opción Android">
+    </item>
+</menu>

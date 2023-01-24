@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">FlipDaniel</string>
+    <string name="ajustes">Ajustes:</string>
+    <string name="sonido">Sonido</string>
+    <string name="vibracion">Vibración</string>
+    <string name="numeros">Números</string>
+    <string name="colores">Colores</string>
+    <string name="formato">Formato de juego:</string>
+    <string name="tramas">Número de Tramas:</string>
+    <string name="ejex">Número de Celdas Eje X:</string>
+    <string name="ejey">Número de Celdas Eje Y:</string>
+    <string name="about">Aplicación Desarrollada Por:</string>
+    <string name="acerca">Acerca De</string>
+    <string name="reglas">Reglas del Juego</string>
+    <string name="regla1">1.- Al pulsar en una baldosa cambiarán de color o número las adyacentes</string>
+    <string name="regla2">2.- Las baldosas de las esquinas afectan a la central</string>
+    <string name="regla3">3.- El objetivo es conseguir tener todas las baldosas de un mismo color o número</string>
+    <string name="click">Clicks:</string>
+    <string name="tiempo">Tiempo:</string>
+    <string name="ganador">Has ganado con:</string>
+
 </resources>

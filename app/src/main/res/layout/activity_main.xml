@@ -37,7 +37,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Número de Tramas:"
+        android:text="@string/tramas"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +49,6 @@
 
     <SeekBar
         android:id="@+id/sbEjeY"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="325dp"
         android:layout_height="22dp"
         android:max="6"
@@ -63,7 +62,6 @@
 
     <SeekBar
         android:id="@+id/sbTrama"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="325dp"
         android:layout_height="22dp"
         android:max="6"
@@ -79,7 +77,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Número de Celdas Eje Y:"
+        android:text="@string/ejey"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,7 +89,6 @@
 
     <SeekBar
         android:id="@+id/sbEjeX"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="325dp"
         android:layout_height="22dp"
         android:max="6"
@@ -107,7 +104,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Número de Celdas Eje X:"
+        android:text="@string/ejex"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,21 +131,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Colores" />
+            android:text="@string/colores" />
 
         <RadioButton
             android:id="@+id/rbNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Números" />
+            android:text="@string/numeros" />
     </RadioGroup>
 
     <CheckBox
         android:id="@+id/chSonido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sonido"
+        android:text="@string/sonido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.127"
@@ -160,7 +157,7 @@
         android:id="@+id/chVibra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vibración"
+        android:text="@string/vibracion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
@@ -172,7 +169,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Formato de Juego:"
+        android:text="@string/formato"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -186,7 +183,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ajustes:"
+        android:text="@string/ajustes"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -235,7 +232,7 @@
         app:layout_constraintVertical_bias="0.056" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/btPlay"
         android:layout_width="157dp"
         android:layout_height="205dp"
         app:layout_constraintBottom_toBottomOf="parent"
