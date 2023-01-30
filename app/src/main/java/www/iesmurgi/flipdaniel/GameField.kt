@@ -3,10 +3,7 @@ package www.iesmurgi.flipdaniel
 import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
-import android.os.Build
-import android.os.Bundle
-import android.os.VibrationEffect
-import android.os.Vibrator
+import android.os.*
 import android.util.DisplayMetrics
 import android.widget.Chronometer
 import android.widget.LinearLayout
@@ -232,7 +229,9 @@ class GameField: AppCompatActivity() {
         val resulIntent=Intent(this, Winner::class.java)
         resulIntent.putExtra("CLICKS", contador)
         var chrono = binding.tvCrono
-        resulIntent.putExtra("TIEMPO", chrono.toString())
+        var chronoM = SystemClock.elapsedRealtime() - chrono.getBase()
+        resulIntent.putExtra("TIEMPO", chronoM.toString())
+
         startActivity(resulIntent)
         setResult(RESULT_OK, resulIntent)
         finish()
