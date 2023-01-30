@@ -5,10 +5,14 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.*
 import android.util.DisplayMetrics
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.Chronometer
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import org.w3c.dom.Text
 import www.iesmurgi.flipdaniel.databinding.CeldaviewBinding
@@ -239,6 +243,54 @@ class GameField: AppCompatActivity() {
 
     fun Context.dpToPx(dp: Int): Int {
         return (dp * resources.displayMetrics.density).toInt()
+    }
+
+    //Options menu
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    //Options item
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.Op -> {
+                mostrarPlayer()
+                true
+            }
+            R.id.Op1 -> {
+                mostrarHowTo()
+                true
+            }
+            R.id.Op2 -> {
+                mostrarAbout()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    //Mostrar datos del options menu
+    fun mostrarHowTo() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(R.string.reglas).setIcon(R.drawable.ajustesicon).setMessage(getString(R.string.regla1)
+                + "\n\n" + getString(R.string.regla2) + "\n\n" + getString(R.string.regla3))
+        //Mostramos el dialogo
+        val dialog = builder.create()
+        dialog.show()
+    }
+
+    fun mostrarAbout() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(R.string.acerca).setIcon(R.drawable.acercadeicon).setMessage(getString(R.string.about) + "\n\nDaniel Alejandro Martín Romero - 2ºDAM")
+        //Mostramos el dialogo
+        val dialog = builder.create()
+        dialog.show()
+    }
+
+    fun mostrarPlayer() {
+        //Sin contenido
     }
 
 
