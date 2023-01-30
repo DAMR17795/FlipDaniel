@@ -84,4 +84,9 @@ class Winner:AppCompatActivity() {
     fun mostrarPlayer() {
         //Sin contenido
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        mp?.stop()
+    }
 }

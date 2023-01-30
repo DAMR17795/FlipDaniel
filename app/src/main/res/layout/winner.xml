@@ -22,13 +22,13 @@
 
     <TextView
         android:id="@+id/tvFelicidades"
-        android:layout_width="342dp"
-        android:layout_height="76dp"
+        android:layout_width="381dp"
+        android:layout_height="80dp"
         android:fontFamily="@font/deadkansas"
         android:text="@string/eno"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="48sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
