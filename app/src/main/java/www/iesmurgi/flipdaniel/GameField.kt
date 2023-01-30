@@ -153,7 +153,9 @@ class GameField: AppCompatActivity() {
             }
         }
 
-        //changeView(x, y)
+        //Casilla pulsada
+        changeView(x, y)
+
         //esquinas del tablero
         if (x==0 && y==0){
             changeView(0, 1)
@@ -175,6 +177,7 @@ class GameField: AppCompatActivity() {
             changeView(topEjeX!!-2, topEjeY!!-2)
             changeView(topEjeX!!-1, topEjeY!!-2)
         }
+
         //lados del tablero
         else if (x==0){
             changeView(x,y-1)
@@ -227,7 +230,9 @@ class GameField: AppCompatActivity() {
         }
 
         val resulIntent=Intent(this, Winner::class.java)
-        resulIntent.putExtra("clicks", contador)
+        resulIntent.putExtra("CLICKS", contador)
+        var chrono = binding.tvCrono
+        resulIntent.putExtra("TIEMPO", chrono.toString())
         startActivity(resulIntent)
         setResult(RESULT_OK, resulIntent)
         finish()

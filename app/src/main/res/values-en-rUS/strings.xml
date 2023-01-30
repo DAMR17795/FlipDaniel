@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flip_Daniel</string>
+    <string name="ajustes">Settings:</string>
+    <string name="sonido">Sound</string>
+    <string name="vibracion">Vibration</string>
+    <string name="numeros">Numbers</string>
+    <string name="colores">Colours</string>
+    <string name="formato">Game Format:</string>
+    <string name="tramas">Number of Frames:</string>
+    <string name="ejex">Number of Tile X Axis:</string>
+    <string name="ejey">Number of Tile Y Axis:</string>
+    <string name="about">App Developed By:</string>
+    <string name="acerca">About</string>
+    <string name="reglas">Game Rules</string>
+    <string name="regla1">1.- Clicking on a tile will change color or number, the tile clicked and the adjacent ones</string>
+    <string name="regla2">2.- The corner tiles affect the central one</string>
+    <string name="regla3">3.- The objective is to get all the tiles of the same color or number</string>
+    <string name="click">Clicks:</string>
+    <string name="tiempo">Time:</string>
+    <string name="ganador">You have won with:</string>
+    <string name="tiempoen">with time: </string>
+    <string name="segundos">seconds </string>
+</resources>
