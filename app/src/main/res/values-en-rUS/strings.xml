@@ -21,4 +21,5 @@
     <string name="ganador">You have won with:</string>
     <string name="tiempoen">with time: </string>
     <string name="segundos">seconds </string>
+    <string name="eno">Congratulations </string>
 </resources>

@@ -2,6 +2,7 @@ package www.iesmurgi.flipdaniel
 
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import www.iesmurgi.flipdaniel.databinding.WinnerBinding
@@ -9,6 +10,7 @@ import www.iesmurgi.flipdaniel.databinding.WinnerBinding
 class Winner:AppCompatActivity() {
     private lateinit var binding:WinnerBinding
     private lateinit var mp: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= WinnerBinding.inflate(layoutInflater)
@@ -22,6 +24,10 @@ class Winner:AppCompatActivity() {
                 resources.getString(R.string.segundos)
         //Ponemos el texto en el comentario ganador
         ganador.text = texto
+
+        val escala = AnimationUtils.loadAnimation(this, R.anim.escala)
+        binding.tvFelicidades.startAnimation(escala)
+        binding.imageView.startAnimation(escala)
 
         mp= MediaPlayer.create(this, R.raw.queen)
         mp?.start()

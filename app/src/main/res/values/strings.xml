@@ -20,5 +20,6 @@
     <string name="ganador">Has ganado con:</string>
     <string name="tiempoen">en un tiempo de: </string>
     <string name="segundos">segundos </string>
+    <string name="eno">Enhorabuena</string>
 
 </resources>
