@@ -232,9 +232,7 @@ class GameField: AppCompatActivity() {
 
         val resulIntent=Intent(this, Winner::class.java)
         resulIntent.putExtra("CLICKS", contador)
-        var chrono = binding.tvCrono
-        var chronoM = SystemClock.elapsedRealtime() - chrono.getBase()
-        resulIntent.putExtra("TIEMPO", chronoM.toString())
+        resulIntent.putExtra("TIEMPO", cronometro.text.toString())
 
         startActivity(resulIntent)
         setResult(RESULT_OK, resulIntent)

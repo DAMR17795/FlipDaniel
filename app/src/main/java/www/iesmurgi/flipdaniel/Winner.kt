@@ -22,17 +22,19 @@ class Winner:AppCompatActivity() {
 
         val miBundle = intent.extras
         var clicks = miBundle!!.getInt("CLICKS")
-        var tiempo = miBundle!!.getInt("TIEMPO")
+        var tiempo = miBundle!!.getString("TIEMPO")
         var ganador: TextView = binding.tvGanar
         var texto: String = "" + ganador.text + " " + clicks + " clicks " + resources.getString(R.string.tiempoen) + " " + tiempo + " " +
                 resources.getString(R.string.segundos)
         //Ponemos el texto en el comentario ganador
         ganador.text = texto
 
+        //Animacion de Victoria
         val escala = AnimationUtils.loadAnimation(this, R.anim.escala)
         binding.tvFelicidades.startAnimation(escala)
         binding.imageView.startAnimation(escala)
 
+        //Musica e victoria
         mp= MediaPlayer.create(this, R.raw.queen)
         mp?.start()
     }
